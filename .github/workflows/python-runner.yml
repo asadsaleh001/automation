@@ -24,4 +24,4 @@ jobs:
 
     - name: Run script
       run: |
-        python "Vzn_Raw_File1.py"
+        python "Vzn Raw File1.py"
