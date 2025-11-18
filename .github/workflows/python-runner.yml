@@ -2,8 +2,8 @@ name: Run Python Script Hourly
 
 on:
   schedule:
-    - cron: "0 * * * *"   # runs every hour
-  workflow_dispatch:      # allow manual run
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -20,8 +20,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r requirements.txt || true
+        pip install pandas
 
     - name: Run script
       run: |
-        python "Vzn Raw File1.py"
+        python "Vzn_Raw_File1.py"
